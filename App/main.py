@@ -4,7 +4,7 @@ from Feature_Extract import features_extraction
 import pickle
 
 
-st.title('Paraphrase Detection in Hindi text')
+st.title('Paraphrase Detection in Hindi Text')
 txt1 = st.text_area("INPUT TEXT 1",placeholder="Enter hindi text")
 txt2 = st.text_area("INPUT TEXT 2",placeholder="Enter hindi text")
 
