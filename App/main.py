@@ -10,10 +10,10 @@ txt2 = st.text_area("INPUT TEXT 2",placeholder="Enter hindi text")
 
 if st.button("Check Paraphrase"):
     feat = features_extraction(txt1,txt2)
-    svc_model = pickle.load(open('./Models/svc_model.pkl', 'rb'))
+    svc_model = pickle.load(open('/app/paraphrase_hindi/App/Models/svc_model.pkl', 'rb'))
     svc_pred = svc_model.predict(feat['features'])
     print("svc: ",svc_pred)
-    rfc_model = pickle.load(open('./Models/rfc_model.pkl', 'rb'))
+    rfc_model = pickle.load(open('/app/paraphrase_hindi/App/Models/rfc_model.pkl', 'rb'))
     rfc_pred = rfc_model.predict(feat['features'])
     print("rfc: ",rfc_pred)
 
