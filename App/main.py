@@ -3,14 +3,6 @@ import streamlit as st
 from Feature_Extract import features_extraction 
 import pickle
 
-#sklearn,numpy,pandas
-
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-
-#models
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier 
 
 st.title('Paraphrase Detection in Hindi text')
 txt1 = st.text_area("INPUT TEXT 1",placeholder="Enter hindi text")
