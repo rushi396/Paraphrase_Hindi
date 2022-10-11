@@ -2,3 +2,4 @@ matplotlib==3.6.1
 numpy==1.22.4
 pandas==1.4.3
 pyiwn==0.0.5
+scikit-learn==1.1.2
